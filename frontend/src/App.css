@@ -1,0 +1,177 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.navbar-container-xy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+.navbar-container-ab {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.timer-circle {
+  width: 40px;
+  color: white;
+  border-radius: 100%; /* Creates a circular shape */
+  border: 2px solid; /* Customize the border as needed */
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  margin: 15px;
+  font-family: 'Oswald'
+}
+.contact-class {
+  background-color: #3DC6C1;
+  padding: 3px;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-family: 'Oswald';
+  color: white;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  margin: 5px;
+}
+.toggle-container {
+  width: 70px;
+  height: 40px;
+  background-color: #2E3241;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin:10px;  
+}
+.toggle-container.toggled {
+  background-color: #fff; /* Green when toggled on */
+}
+/* Toggle Circle */
+.toggle-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #3DC6C1;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  margin: 5px;
+}
+.toggle-circle.left {
+  transform: translateX(0);
+}
+.toggle-circle.right {
+  transform: translateX(30px); /* Move circle to the right when toggled on */
+}
+
+.header-container {
+  display: flex;
+  font-family: Oswald;
+  color: white;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right:10px;
+}
+
+.header-string {
+  display: block;
+  margin: 5%;
+  font-weight: 400;
+  font-size: 40px;
+  color: #3DC6C1;
+
+}
+.header-string-main {
+  display: block;
+  font-size: 25px;
+  width: 40%;
+  margin-top: 1%;
+}
+.header-string-lower {
+  font-size: 20px;
+  color: #60636B;
+}
+.header-string-main-lower{
+  font-size: 18px;
+  color: #60636B;
+}
+.header-string-main-upper {
+  font-size: 30px;
+  color: #60636B;
+}
+.header-string-main-middle {
+  font-size: 80px;
+  color: #fff;
+  display: flex;
+  margin-left: 15%;
+}
+.table-container {
+  color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'Oswald';
+}
+
+.heading {
+  font-size: 25px;
+  color: #60636B;
+  font-weight: 1000;
+}
+
+.table-row-spacing {
+  background-color: #2E3241;
+  font-size: 25px;
+  border-radius: 30px !important;
+  border-bottom-width: 20px;
+  border-top-width: 10px;
+  border-color: #191D28;
+}
+.non-button {
+  color: white;
+  font-family: 'Oswald';
+  border-radius: 5px;
+  background-color: #2E3241;
+  width: 50px;
+  height: 40px;
+  padding-top: 8px;
+}
